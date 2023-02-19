@@ -1,0 +1,7 @@
+CREATE TABLE Secao(
+    ID_Secao Auto increment int NOT NULL,
+    ID_Controle Estoque  INT NOT NULL,
+    Nome_Secao varchar(20) NOT NULL,
+    Numero_Corredor int(2) NOT NULL,
+    PRIMARY KEY(ID_Secao),
+    FOREIGN KEY (ID_Controle Estoque) REFERENCES Controle_Estoque(ID_Controle Estoque)
